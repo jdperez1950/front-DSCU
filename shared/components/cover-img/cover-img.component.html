@@ -1,0 +1,6 @@
+<div class="cover-container" [ngStyle]="{'height.px': height}">
+    <img [src]="imageSrc" alt="Cover Image" class="cover-image" />
+    <div class="cover-text" [ngClass]="textPosition">
+      <ng-content></ng-content>
+    </div>
+  </div>

@@ -1,0 +1,32 @@
+<!-- Se llama componente de img, considero q ese diseño lo pensaron como sitio we no intectivo
+una img de 900px de alto abarca practicamente todo el alto de una pantalla XD -->
+
+
+<div class="bannerhome-principal">
+  <app-cover-img imageSrc="bannerPrincipal-home.jpeg" [height]="900" textPosition="left-center">
+    Aplicativo Sustitución de tierras
+    <br />
+    Programa de Sustitución de cultivos ilicitos
+  </app-cover-img>
+</div>
+
+<div class="card-grid">
+  
+  <app-card imageSrc="card-3.jpeg" title="Iniciar Sesión" description="Si eres proveedor o beneficiario ingresa aquí." buttonText="Iniciar Sesión"
+  buttonLink="/auth" backgroundColor="#4CAF50">
+</app-card>
+  <app-card imageSrc="card-1.jpeg" title="Registro BENEFICIARIOS" description="OXOXOXOXOXOXOXOXOXOXOXOXOX"
+    buttonText="Ver más" buttonLink="/beneficiarios" backgroundColor="#FF5722">
+  </app-card>
+  <app-card imageSrc="card-2.jpeg" title="Registro PROVEEDORES" description="Otra descripción" buttonText="Leer más"
+  buttonLink="/otro-enlace" backgroundColor="#4CAF50">
+</app-card>
+</div>
+
+<div class="bannersecundario-home">
+  <app-cover-img imageSrc="banner-2-Home.jpeg" [height]="350" textPosition="right-center">
+    Juntos Construiremos un nuevo
+    <br />
+    rumbo del campo para nuestro País
+  </app-cover-img>
+</div>

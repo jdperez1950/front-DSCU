@@ -1,0 +1,9 @@
+<div class="card-container">
+    <img [src]="imageSrc" alt="Card Image" class="card-image" />
+    <div class="card-content" [ngStyle]="{'background-color': backgroundColor}">
+      <h3>{{ title }}</h3>
+      <p>{{ description }}</p>
+      <a  mat-raised-button class="centered-button" [routerLink]="buttonLink">{{ buttonText }}</a>
+    </div>
+  </div>
+  

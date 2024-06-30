@@ -1,0 +1,81 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px 100px;
+  }
+  
+  .login-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .login-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 80px;
+
+  }
+  
+  .login-form h2 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-buttons button {
+    flex: 1;
+  }
+  
+  .toggle-buttons .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    align-self: flex-start;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  .container-login-form{
+    padding: 40px;
+  }
+  .banner-container-login{
+    margin-top: 20px;
+  }
+  .button-login{
+    display: flexs;
+    background-color: #4CAF50;
+    color: #fff !important;
+    padding: 20px 60px;
+  }
+
+  .container-btn-login{
+    display: flex;
+    justify-content: space-between;
+  }

@@ -1,0 +1,42 @@
+.card-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 50px 16PX;
+    color: white;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .card-content p {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  
+  .card-content a {
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .card-content .centered-button {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px; /* Ajusta esto si el botón es más alto o más bajo */
+    line-height: normal; /* Resetea el line-height si es necesario */
+  }
