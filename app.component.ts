@@ -10,7 +10,6 @@ import { AuthComponent } from './auth/auth.component';
 import { isPlatformBrowser } from '@angular/common';
 
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
