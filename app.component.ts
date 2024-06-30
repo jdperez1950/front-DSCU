@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { RouterOutlet,Router, NavigationEnd } from '@angular/router';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { NavGovCoComponent } from './shared/components/nav-gov-co/nav-gov-co.component';
@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavSerachBarComponent } from './shared/components/nav-serach-bar/nav-serach-bar.component';
 import { Page404Component } from './shared/components/page-404/page-404.component';
 import { AuthComponent } from './auth/auth.component';
-
+import { isPlatformBrowser } from '@angular/common';
 
 
 
@@ -28,13 +28,15 @@ import { AuthComponent } from './auth/auth.component';
 export class AppComponent  implements OnInit{
   title = 'front-dscu';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
-      }
-    });
+    if (isPlatformBrowser(this.platformId)) {
+      this.router.events.subscribe((event) => {
+        if (event instanceof NavigationEnd) {
+          window.scrollTo(0, 0);
+        }
+      });
+    }
   }
 }
